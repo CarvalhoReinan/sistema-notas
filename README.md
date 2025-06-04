@@ -52,4 +52,4 @@ python student_manager/main.py
 ---
 
 
-Desenvolvido por: Reinan Carvalho (@CarvalhoReinan)✍️
+Desenvolvido por: Reinan Carvalho (CarvalhoReinan)✍️
