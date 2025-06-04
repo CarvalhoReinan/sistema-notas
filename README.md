@@ -5,11 +5,9 @@ Sistema simples em Python para calcular médias e classificar alunos. Ideal para
 
 Este é um sistema simples de gerenciamento de notas de alunos feito em Python. O programa coleta o nome de cada aluno, suas três notas e calcula a média final. Com base na média, o aluno será classificado como:
 
-- ✅ **Aprovado**
-- 🟡 **Recuperação**
-- ❌ **Reprovado**
-
----
+✅ Aprovado  
+🟡 Recuperação  
+❌ Reprovado
 
 ## 🚀 Funcionalidades
 
@@ -20,56 +18,22 @@ Este é um sistema simples de gerenciamento de notas de alunos feito em Python. 
 - Opção de cancelar operações ou tentar novamente em caso de erro
 - Exibição de um relatório final com totais e listas de alunos por categoria
 
----
-
 ## 🛠️ Tecnologias usadas
 
 - Python 3
-- [InquirerPy](https://github.com/kazhala/InquirerPy) (para inputs mais amigáveis no terminal)
-- Módulos padrões: `os`, `time`
-
----
+- [InquirerPy](https://github.com/kazhala/InquirerPy)
+- Módulos padrões: os, time
 
 ## 📦 Instalação
 
-1. Clone este repositório:
-
 ```bash
-git clone https://github.com/seuusuario/sistema-notas.git
-cd sistema-notas
-```
-
-2. Crie um ambiente virtual (opcional, mas recomendado):
-
-```bash
+git clone https://github.com/seuusuario/STUDENT-MANAGER.git
+cd STUDENT-MANAGER
 python -m venv venv
 source venv/bin/activate  # No Windows: venv\Scripts\activate
-```
-
-3. Instale as dependências:
-
-```bash
 pip install InquirerPy
+python student_manager/main.py
 ```
-
----
-
-## ▶️ Como usar
-
-Execute o programa no terminal com:
-
-```bash
-python sistema_notas.py
-```
-
-Você será guiado por uma interface simples para inserir:
-- A quantidade de alunos
-- Nome de cada aluno
-- Três notas (de 0 a 10)
-
-Ao final, um resumo será exibido com totais e a lista de alunos classificados.
-
----
 
 ## 📊 Critérios de Avaliação
 
@@ -79,8 +43,6 @@ Ao final, um resumo será exibido com totais e a lista de alunos classificados.
 | 3.0 - 4.9   | 🟡 Recuperação  |
 | < 3.0       | ❌ Reprovado    |
 
----
-
 ## 📌 Observações
 
 - O nome do aluno deve conter apenas letras.
@@ -88,7 +50,6 @@ Ao final, um resumo será exibido com totais e a lista de alunos classificados.
 - É possível cancelar ou repetir a operação em caso de erro de entrada.
 
 ---
-
 
 
 Desenvolvido por: Reinan Carvalho (@CarvalhoReinan)✍️
