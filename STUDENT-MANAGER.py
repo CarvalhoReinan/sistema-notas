@@ -2,6 +2,7 @@ from InquirerPy import prompt
 from time import sleep
 import os
 
+
 CANCELAR = "Ok ! Operacão encerrada."
 
 def tentar_novamente():
@@ -73,7 +74,7 @@ def imprimir_alunos(aprovados, reprovados, recuperar):
     for aluno in recuperar:
         print(f'{aluno[0].capitalize()} - Média: {aluno[1]:.2f}')
             
-def planilha_nota():
+def planilha_nota():# Função principal para gerenciar a planilha de notas
     qtd_alunos = quantidade_aluno()
     if qtd_alunos is None:
         return
@@ -85,7 +86,7 @@ def planilha_nota():
     reprovados = []
     recuperar = []
 
-    for _ in range(qtd_alunos):
+    for _ in range(qtd_alunos): # Loop para cada aluno
         aluno = nome_aluno()    
         if aluno is None:
             return
@@ -94,7 +95,7 @@ def planilha_nota():
         if notas is None:
             return
 
-        resultado = calcular_media(*notas)
+        resultado = calcular_media(*notas) #função para calcular a média
 
         if resultado >= 5:
             print(f'{aluno.capitalize()}, passou! Média: {resultado:.2f}')
@@ -111,7 +112,8 @@ def planilha_nota():
             
     total = qtd_alunos
     print("\nAguarde um momento..")
-    sleep (3)
+    sleep (3) # Simula um tempo de espera para o usuário
+    # Limpa a tela para mostrar o resultado
     os.system('cls' if os.name == 'nt' else 'clear')
     print('='*20)
     print(f'\nSEGUE A PLANILHA ABAIXO:')
